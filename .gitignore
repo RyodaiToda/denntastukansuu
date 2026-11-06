@@ -1,0 +1,12 @@
+# Visual Studio / MSVC build outputs
+.vs/
+bin/
+obj/
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.ipch
+*.suo
+*.user
+*.lnk
