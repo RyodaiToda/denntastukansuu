@@ -1,0 +1,12 @@
+C:\Ryoudai\C#\denntastukansuu\dentastu\bin\Debug\dentastu.exe.config
+C:\Ryoudai\C#\denntastukansuu\dentastu\bin\Debug\dentastu.exe
+C:\Ryoudai\C#\denntastukansuu\dentastu\bin\Debug\dentastu.pdb
+C:\Ryoudai\C#\denntastukansuu\dentastu\obj\Debug\dentastu.csprojAssemblyReference.cache
+C:\Ryoudai\C#\denntastukansuu\dentastu\obj\Debug\dentastu.Properties.Resources.resources
+C:\Ryoudai\C#\denntastukansuu\dentastu\obj\Debug\dentastu.csproj.GenerateResource.cache
+C:\Ryoudai\C#\denntastukansuu\dentastu\obj\Debug\dentastu.csproj.CoreCompileInputs.cache
+C:\Ryoudai\C#\denntastukansuu\dentastu\obj\Debug\dentastu.exe
+C:\Ryoudai\C#\denntastukansuu\dentastu\obj\Debug\dentastu.pdb
+C:\Ryoudai\C#\denntastukansuu\dentastu\obj\Debug\dentastu.Form1.resources
+C:\Ryoudai\C#\denntastukansuu\dentastu\obj\Debug\dentastu.Form2.resources
+C:\Ryoudai\C#\denntastukansuu\dentastu\obj\Debug\dentastu.Form3.resources
