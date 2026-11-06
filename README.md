@@ -50,9 +50,9 @@
 
 入力 $R(s)$ はインパルスなら $1$、ステップなら $1/s$ です。どちらの場合も出力は
 
-$$
+```math
 Y(s) = G(s)R(s) = \frac{N(s)}{D(s)}
-$$
+```
 
 の形になります。分母 $D(s)$ は、系の分母多項式と入力の $s$ を掛けたものです。この掛け算は自作の `Polynomial.Multiplication` で行います。
 
@@ -60,20 +60,20 @@ $$
 
 $n$ 次多項式 $D(s)=a_n\prod_i (s-p_i)$ の根 $p_1,\dots,p_n$ を、次の式を繰り返して全部同時に求めます。
 
-$$
-z_i^{(k+1)} = z_i^{(k)} - \frac{D\bigl(z_i^{(k)}\bigr)}{a_n \prod_{j\ne i}\bigl(z_i^{(k)} - z_j^{(k)}\bigr)}
-$$
+```math
+z_i^{(k+1)} = z_i^{(k)} - \frac{D\left(z_i^{(k)}\right)}{a_n \prod_{j \ne i} \left(z_i^{(k)} - z_j^{(k)}\right)}
+```
 
-初期値には Aberth の初期値（根の重心 $\beta=-a_{n-1}/(n\,a_n)$ を中心とする円周上に並べた点）を使っています（[`DK.SetInitialValue`](dentastu/DK.cs)）。
+初期値には Aberth の初期値（根の重心 $\beta = -a_{n-1} / (n a_n)$ を中心とする円周上に並べた点）を使っています（[`DK.SetInitialValue`](dentastu/DK.cs)）。
 
 ### 3. 留数定理で時間応答に戻す
 
 極がすべて単根なら、逆ラプラス変換は留数の和として書けます。
 
-$$
-y(t) = \sum_i \operatorname{Res}_{s=p_i}\!\left[Y(s)e^{st}\right]
-     = \sum_i \frac{N(p_i)}{a_n\prod_{j\ne i}(p_i-p_j)}\,e^{p_i t}
-$$
+```math
+y(t) = \sum_i \mathrm{Res}_{s=p_i} \left[ Y(s) e^{st} \right]
+     = \sum_i \frac{N(p_i)}{a_n \prod_{j \ne i} (p_i - p_j)} e^{p_i t}
+```
 
 この $y(t)$ を時刻ごとに計算して、グラフに描きます。
 
